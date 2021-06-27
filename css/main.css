@@ -1,12 +1,12 @@
 
 /* Background Containers */
 .color-container1 {
-    background: #f3d5a5;
+    background: #FCEDD9;
     
 }
 
 .color-container2 {
-    background: #efc88b;
+    background: #FDD8E2;
     
 }
 
@@ -51,6 +51,15 @@
 
 .project-ulist a {
     text-decoration: none;
+}
+
+.android-app-main-ideas li {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.android-app-main-ideas span {
+    color: black;
 }
 
 
