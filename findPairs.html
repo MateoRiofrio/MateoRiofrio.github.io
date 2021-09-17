@@ -45,11 +45,13 @@
             </nav>
             
             <div class="row border rounded">
-                <div class="col-sm-12 col-md-5 col-lg-3 ms-3 me-lg-5 mt-4 mb-4">
+                <div class="col-sm-12 col-md-5 col-lg-5 ms-3 me-lg-5 mt-4 mb-4">
                     <b><p> Find Pairs That Sum To a Number:</p></b>
-                    <label for="listInput">Please insert a list of numbers separated by commas  (no brackets):</label><br>
-                    <input id="listInput" type="text">
-                    <input type="button" value="Get Pairs" onclick="updateResults();">
+                    <label for="listInput">Please insert a list of numbers separated by commas:</label><br>
+                    <input id="listInput" type="text" value="1, 1, 2, 4, 4, 5, 5, 5, 6, 7, 9"><br>
+                    <label for="sumValue">Enter sum value:</label><br>
+                    <input id="sumValue" type="text" value="10"><br>
+                    <input type="button" value="Get Pairs" onclick="updateResults();" class="mt-4">
                 </div>
                 
             </div>
