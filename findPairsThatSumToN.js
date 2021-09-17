@@ -1,11 +1,11 @@
 /**
- * Finds all pairs that sum to target value. Runtime: O(n^2)
+ * Finds all pairs that sum to the target value. Runtime: O(n^2)
  * @param numArray - Array of numbers
  * @param n - size of the array of numbers
  * @param target - target value pairs sum up to
  * @returns - array of valid pairs
  */
-function findAllPairs(numArray, n, target) {
+ function findAllPairs(numArray, n, target) {
     // create empty "map" for valid pairs
     var pairArray = [];
     // loop through array twice to find pairs that sum to target
@@ -21,7 +21,7 @@ function findAllPairs(numArray, n, target) {
     return pairArray;
 }
 /**
- * Finds all pairs that sum to target value. Runtime: O(n^2)
+ * Finds all unique pairs and reversed pairs that sum to the target value. Runtime: O(n^2)
  */
 function findUniqueAndReversedPairs(numArray, n, target) {
     // create empty "map" for valid pairs
@@ -38,7 +38,8 @@ function findUniqueAndReversedPairs(numArray, n, target) {
     return pairArray;
 }
 /**
- * Finds all unique and reversed pairs using two pointers. Runtime: O(n log n)
+ * Finds all unique pairs using two pointers. One pointer starts at the beginning of the list, the other at the end.
+ * Run until pointers intersect and have covered all unique pairings. Runtime: O(n log n)
  */
 function findUniquePairs(numArray, n, target) {
     // sort the array in ascending order
