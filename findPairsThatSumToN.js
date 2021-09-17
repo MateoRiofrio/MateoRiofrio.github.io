@@ -90,7 +90,10 @@ function parseMapResults(numArray) {
 function updateResults() {
     // get array from html
     let arrayInput = document.getElementById("listInput").value;
-
+    
+    // get sum value from html
+    let sumValue = document.getElementById("sumValue").value.map(Number);
+ 
     // parse input string into array (map is used here to transform each element into an integer)
     let parsedArray = arrayInput.split(",").map(Number)
 
@@ -102,7 +105,7 @@ function updateResults() {
 
     // update html tags with results
     list.textContent = `[${arrayInput}]`;
-    allPairs.textContent = parseListResults(findAllPairs(parsedArray, parsedArray.length, 10));
-    uniqueAndReversedPairs.textContent = parseMapResults(findUniqueAndReversedPairs(parsedArray, parsedArray.length, 10));
-    uniquePairs.textContent = parseMapResults(findUniquePairs(parsedArray, parsedArray.length, 10));
+    allPairs.textContent = parseListResults(findAllPairs(parsedArray, parsedArray.length, sumValue));
+    uniqueAndReversedPairs.textContent = parseMapResults(findUniqueAndReversedPairs(parsedArray, parsedArray.length, sumValue));
+    uniquePairs.textContent = parseMapResults(findUniquePairs(parsedArray, parsedArray.length, sumValue));
 }
