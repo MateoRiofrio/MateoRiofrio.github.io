@@ -92,7 +92,8 @@ function updateResults() {
     let arrayInput = document.getElementById("listInput").value;
     
     // get sum value from html
-    let sumValue = document.getElementById("sumValue").value.map(Number);
+    let sumValue = Number(document.getElementById("sumValue").value);
+
  
     // parse input string into array (map is used here to transform each element into an integer)
     let parsedArray = arrayInput.split(",").map(Number)
