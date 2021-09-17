@@ -12,10 +12,42 @@
 <body class="d-flex flex-column min-vh-100">
     <main class="flex-shrink-0">
         <div class="container">
-            <h2>Welcome!</h2>
+            
+            <nav class="navbar navbar-expand-md navbar-light mt-2">
+                <a href="#" class="navbar-brand">Mateo's Portfolio</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#toggleMobileMenu"
+                    aria-controls="toggleMobileMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+    
+                <span class="navbar-toggler-icon"></span>
+    
+                </button>
+    
+                <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li>
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
             <div class="row border rounded">
                 <div class="col-sm-12 col-md-5 col-lg-3 ms-3 me-lg-5 mt-4 mb-4">
-                    <label for="listInput">Please insert a list of numbers separated by commas (no brackets):</label><br>
+                    <b><p> Find Pairs That Sum To a Number:</p></b>
+                    <label for="listInput">Please insert a list of numbers separated by commas:</label><br>
                     <input id="listInput" type="text">
                     <input type="button" value="Get Pairs" onclick="updateResults();">
                 </div>
@@ -36,5 +68,13 @@
             </div>
         </div>
     </main>
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <span class="text-muted">© Mateo Riofrio 2021</span>
+            <a href="https://www.linkedin.com/in/mateo-riofrio-970b43180/" target="_blank"><small style="color:grey" class="fa fa-lg fa-linkedin pull-right"></small></a>
+            <a href="https://github.com/MateoRiofrio" target="_blank"><small style="color:grey" class="fa fa-lg fa-github pull-right me-1"></small></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
